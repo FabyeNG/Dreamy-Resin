@@ -17,9 +17,27 @@
             color: white;
             padding: 20px;
             font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
         .section {
-            margin: 40px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            width: 300px;
         }
         .gallery {
             display: flex;
@@ -59,43 +77,46 @@
     </style>
 </head>
 <body>
-    <header>Créations Artisanales en Résine Époxy</header>
+    <header>
+        <img src="logo.png" alt="Logo de l'atelier">
+        <span>Créations Artisanales en Résine Époxy</span>
+    </header>
     
     <h2>Bienvenue dans mon univers !</h2>
     <p>Découvrez mes objets uniques faits main.</p>
     
-    <div class="section">
-        <h2>Attrape-Rêves</h2>
-        <div class="gallery">
-            <div class="product">
-                <img src="attrape-reves.jpg" alt="Attrape-rêves en résine">
-                <h3>Attrape-Rêves</h3>
-                <p>Avec des plumes naturelles et un design en résine colorée.</p>
-                <a href="#" class="buy-button">Acheter</a>
+    <div class="sections-container">
+        <div class="section">
+            <h2>Attrape-Rêves</h2>
+            <div class="gallery">
+                <div class="product">
+                    <img src="attrape-reves.jpg" alt="Attrape-rêves en résine">
+                    <h3>Attrape-Rêves</h3>
+                    <p>De la résine, des paillettes, des pigments et des encres  .</p>
+                    <a href="#" class="buy-button">Acheter</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="section">
-        <h2>Salamandres</h2>
-        <div class="gallery">
-            <div class="product">
-                <img src="salamandre.jpg" alt="Salamandre en résine">
-                <h3>Salamandre Décorative</h3>
-                <p>Une salamandre artisanale en résine colorée, parfaite pour la décoration.</p>
-                <a href="#" class="buy-button">Acheter</a>
+        <div class="section">
+            <h2>Salamandres</h2>
+            <div class="gallery">
+                <div class="product">
+                    <img src="salamandre.jpg" alt="Salamandres et animaux en résine">
+                    <h3>Salamandre Décorative</h3>
+                    <p>Des animaux en résine colorée, parfaits pour la décoration.</p>
+                    <a href="#" class="buy-button">Acheter</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="section">
-        <h2>Mobiles et Carillons</h2>
-        <div class="gallery">
-            <div class="product">
-                <img src="mobile-bebe.jpg" alt="Mobile pour bébé">
-                <h3>Mobile pour Bébé</h3>
-                <p>Un mobile suspendu en résine et bois, idéal pour une décoration apaisante.</p>
-                <a href="#" class="buy-button">Acheter</a>
+        <div class="section">
+            <h2>Mobiles et Carillons</h2>
+            <div class="gallery">
+                <div class="product">
+                    <img src="mobile-bebe.jpg" alt="Mobile pour bébé">
+                    <h3>Mobile pour Bébé</h3>
+                    <p>En mobile ou en carillon ces suspensins en résine sont idéales pour une décoration apaisante.</p>
+                    <a href="#" class="buy-button">Acheter</a>
+                </div>
             </div>
         </div>
     </div>
@@ -103,10 +124,10 @@
     <div class="section">
         <h2>Autres Créations</h2>
         <ul>
-            <li>Porte-bougie</li>
-            <li>Sous-verres</li>
-            <li>Mini plateaux</li>
-            <li>Petits vases</li>
+            <li>Porte-bougie, sous-verres</li>
+            <li>porte-clés, petits vases</li>
+            <li>Mini plateaux, et bien d'autres objets encore</li>
+            <li>Vos rêves et vos envies : mes créations uniques</li>
         </ul>
     </div>
     
